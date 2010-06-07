@@ -3,15 +3,17 @@
   <ModulePrefs title="Youroom Gadget" author_email="pochi.black@gmail.com">
   </ModulePrefs>
   <Content type="html"><![CDATA[
+    <script type="text/javascript" src="/javascripts/jquery-1.4.2.min.js" />
     <script type="text/javascript">
       function make_room_list(room_list) {
-        alert(typeof(room_list));
+        $(eval(room_list)).each(function(room, _) { alert(room.group.name); });
       };
 
       /* get information with infoscoop authentication*/
       gadgets.io.makeRequest("http://localhost:3000/youroom/list_html",
-                             function(response) { make_room_list(eval(response.data)); },
+                             function(response) { make_room_list(response.data); },
                              { AUTHORIZATION: gadgets.io.AuthorizationType.IS_SEND_PORTAL_UID_HEADER });
     </script>
   ]]></Content>
 </Module>
+
