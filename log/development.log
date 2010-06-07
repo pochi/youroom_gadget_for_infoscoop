@@ -1,1 +1,136 @@
 
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#hello (for 127.0.0.1 at 2010-06-07 11:35:14) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#hello (for 127.0.0.1 at 2010-06-07 11:35:27) [GET]
+Completed in 7ms (View: 4, DB: 3) | 200 OK [http://localhost/youroom/hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#hello (for 127.0.0.1 at 2010-06-07 11:35:28) [GET]
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#hello (for 127.0.0.1 at 2010-06-07 11:35:37) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/hello]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#hello (for 127.0.0.1 at 2010-06-07 11:38:46) [GET]
+
+ActionController::UnknownAction (No action responded to hello. Actions: list):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#hello (for 127.0.0.1 at 2010-06-07 11:38:47) [GET]
+
+ActionController::UnknownAction (No action responded to hello. Actions: list):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:38:59) [GET]
+Completed in 3ms (View: 1, DB: 3) | 200 OK [http://localhost/youroom/list]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:38:59) [GET]
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:41:04) [GET]
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/youroom/list]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:41:18) [GET]
+Rendering youroom/list
+Completed in 60ms (View: 58, DB: 0) | 200 OK [http://localhost/youroom/list]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-07 11:41:39) [GET]
+
+ActionController::RoutingError (No route matches "/youroom/list.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:41:43) [GET]
+Rendering youroom/list
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:41:50) [GET]
+Rendering youroom/list
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://localhost/youroom/list]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:41:50) [GET]
+Rendering youroom/list
+Completed in 35ms (View: 33, DB: 1) | 200 OK [http://localhost/youroom/list]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:41:50) [GET]
+Rendering youroom/list
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/youroom/list]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:41:53) [GET]
+Rendering youroom/list
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/youroom/list]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:42:50) [GET]
+Rendering youroom/list
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/youroom/list]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:42:50) [GET]
+Rendering youroom/list
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list (for 127.0.0.1 at 2010-06-07 11:42:53) [GET]
+Rendering youroom/list
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list]
