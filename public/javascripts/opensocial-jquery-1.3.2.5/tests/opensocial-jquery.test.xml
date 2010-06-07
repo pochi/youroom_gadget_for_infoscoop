@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<!--
+opensocial-jquery
+http://code.google.com/p/opensocial-jquery/
+
+Copyright(C) 2009 Nakajiman Software Inc.
+http://nakajiman.lrlab.to/
+
+Dual licensed under the MIT and GPL licenses:
+http://www.opensource.org/licenses/mit-license.php
+http://www.gnu.org/licenses/gpl.html
+-->
+<ModulePrefs 
+  title="opensocial-jquery Test Suite"
+  description="opensocial-jquery is jQuery based concise JavaScript Library for rapid OpenSocial Gadgets development."
+  height="600"
+>
+<Require feature="views" />
+<Require feature="dynamic-height" />
+</ModulePrefs>
+<Content type="html" view="canvas"><![CDATA[
+<script type="text/javascript" src="http://developmentor.lrlab.to/opensocial-jquery/features/opensocial-jquery/opensocial-jquery.js"></script>
+<style type="text/css">
+@import url(http://developmentor.lrlab.to/opensocial-jquery/tests/testsuite.css);
+</style>
+<script type="text/javascript" src="http://developmentor.lrlab.to/opensocial-jquery/tests/testrunner.js"></script>
+<script type="text/javascript" src="http://developmentor.lrlab.to/opensocial-jquery/tests/window.test.js"></script>
+<h1 id="header">opensocial-jquery Test Suite</h1>
+<h2 id="banner"></h2>
+<h2 id="userAgent"></h2>
+<ol id="tests"></ol>
+<div id="main"></div>
+]]></Content>
+</Module>

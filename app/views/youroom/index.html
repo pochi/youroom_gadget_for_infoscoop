@@ -3,17 +3,41 @@
   <ModulePrefs title="Youroom Gadget" author_email="pochi.black@gmail.com">
   </ModulePrefs>
   <Content type="html"><![CDATA[
-    <script type="text/javascript" src="/javascripts/jquery-1.4.2.min.js" />
+    <script type="text/javascript" src="http://localhost:3000/javascripts/jquery-1.4.2.min.js" />
     <script type="text/javascript">
       function make_room_list(room_list) {
-        $(eval(room_list)).each(function(room, _) { alert(room.group.name); });
+        eval(room_list).each(function(room, _) {
+          render_room(room.group.name, convert_url(room.group.to_param)); });
       };
 
-      /* get information with infoscoop authentication*/
-      gadgets.io.makeRequest("http://localhost:3000/youroom/list_html",
-                             function(response) { make_room_list(response.data); },
-                             { AUTHORIZATION: gadgets.io.AuthorizationType.IS_SEND_PORTAL_UID_HEADER });
+      function convert_url(param){
+        return "https://" + param + ".youroom.in/";
+      };
+
+      function render_room(name, url){
+        var room_ui = document.getElementById("room_list");
+        var li_elm = document.createElement("li");
+        li_elm.innerHTML = name;
+        room_ui.appendChild(li_elm);
+      };
+
+      function initialize_room_list(){
+
+        /* get information with infoscoop authentication*/
+        gadgets.io.makeRequest("http://localhost:3000/youroom/list_html",
+                               function(response) { make_room_list(response.data); },
+                               { AUTHORIZATION: gadgets.io.AuthorizationType.IS_SEND_PORTAL_UID_HEADER });
+      };
+
+      // jQuery(function(){...}); と同じ
+      gadgets.util.registerOnLoadHandler(initialize_room_list());
     </script>
+
+    <h5>参加ルーム一覧</h5>
+    <div>
+      <ul id="room_list">
+      </ul>
+    </div>
   ]]></Content>
 </Module>
 

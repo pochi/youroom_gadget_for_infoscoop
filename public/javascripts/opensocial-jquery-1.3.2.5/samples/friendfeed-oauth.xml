@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<!--
+opensocial-jquery
+http://code.google.com/p/opensocial-jquery/
+
+Copyright(C) 2009 Nakajiman Software Inc.
+http://nakajiman.lrlab.to/
+
+Dual licensed under the MIT and GPL licenses:
+http://www.opensource.org/licenses/mit-license.php
+http://www.gnu.org/licenses/gpl.html
+-->
+<ModulePrefs title="FriendFeed OAuth" description="This Gadgets is example using OAuth Proxy that post to FriendFeed at gooHome.">
+<Require feature="minimessage"/>
+<Require feature="oauthpopup"/>
+<!--<Require feature="opensocial-jquery" />-->
+<OAuth>
+<Service name="friendfeed">
+<Request url="https://friendfeed.com/account/oauth/request_token" param_location="uri-query"/>
+<Authorization url="https://friendfeed.com/account/oauth/authorize"/>
+<Access url="https://friendfeed.com/account/oauth/access_token" param_location="uri-query"/>
+</Service>
+</OAuth>
+</ModulePrefs>
+<Content type="html" view="canvas"><![CDATA[
+<style>
+</style>
+<script type="text/javascript" src="http://opensocial-jquery.googlecode.com/svn/trunk/features/opensocial-jquery/opensocial-jquery.min.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script>
+jQuery(function($) {
+
+  function post(url, data) {
+    $.post(url+ ' friendfeed', data).next(function() {
+      document.form.body.value = '';
+    }).error(function(e) {
+      if (e == 'oauth')
+        $('<a href="#signin"/>')
+          .text('Sign in with FriendFeed')
+          .click(function() {
+            $(this).parents('table').remove(); // remove minimessage
+            $.oauth('friendfeed', function() {
+              $(document.form).submit();
+            });
+            return false;
+          })
+          .minimessage();      
+      else
+        $('<span/>')
+          .text('Oops, there was a problem: '+e)
+          .minimessage();  
+    });
+  };
+
+  $(document.form).submit(function() {
+    var data = { body: this.body.value };
+    if (google.loader.ClientLocation)
+      data.geo = [
+        google.loader.ClientLocation.latitude, 
+        google.loader.ClientLocation.longitude
+      ].join(',');
+    post('http://friendfeed-api.com/v2/entry', data);
+    return false;
+  });
+
+});
+</script>
+<form name="form">
+<textarea name="body">What are you doing?</textarea><br />
+<input type="submit" value="Post">
+</form>
+]]></Content>
+</Module>
