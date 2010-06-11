@@ -6,139 +6,67 @@
     <script type="text/javascript" src="https://dl.dropbox.com/u/7052609/opensocial-jquery.min.js"></script>
 
     <style>
-      #main {
-        font-size: small;
-      }
-      #main ul {
-        list-style: none;
-      }
-      #main li {
-        font-size: small;
-        width: 100%;
-      }
-      #main h5 {
-        padding: 0;
-      }
-    </style>
+    #main {
+      margin: 0px;
+      padding: 0px;
+      font-size: small;
+    }
+    .entry {
+      border-bottom: 1px solid silver;
+      padding: 4px 0px;
+    }
+    .entry img {
+      float: left;
+      margin: 4px;
+    }
+    .entry .name {
+      color: glay;
+    }
+    .clear_left {
+      clear: left;
+    }
+    .reset {
+    }
+    .room {
+      margin: 3px 0;
+    }
+    .link {
+      color: blue;
+      cursor: pointer;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+    form textarea {
+      width: 100%;
+    }
+  </style>
 
-    <script type="text/javascript">
+  <script type="text/javascript">
       $(function(){
-        $("#all").click(function(){
-          _IS_DropMiniBrowser("https://home.youroom.in/", "全てのつぶやき", "https://home.youroom.in/");
-        });
+        function createGroupEntries(data){
+          alert(data);
+        }
 
-        $("#all").hover(
-          function(){
-            $(this).css("color", "blue");
-            $(this).append($("<span> [追加する] </span>"));
-          },
-          function(){
-            $(this).css("color", "black");
-            $(this).find("span:last").remove();
-          }
-        );
-
-        $("#not_read_only").hover(
-          function(){
-            $(this).css("color", "blue");
-            $(this).append($("<span> [追加する] </span>"));
-          },
-          function(){
-            $(this).css("color", "black");
-            $(this).find("span:last").remove();
-          }
-        );
-
-        $("#not_read_only").click(function(){
-          _IS_DropMiniBrowser("https://home.youroom.in/unreads", "未読のつぶやき", "https://home.youroom.in/unreads");
-        });
-
-        function make_room_list(room_list) {
-          eval(room_list).each(function(room, count) {
-            render_room(room.group.name, convert_url(room.group.to_param), (count+1).toString());
-            set_link_action(room.group.name, group_gadget_url(room.group.to_param), (count+1).toString());
-          });
-        };
-
-        function set_link_action(name, url, num) {
-          var id = "#room"+num;
-          $(id).click(function() {
-            //_IS_DropMiniBrowser(url, name, url);
-            _IS_DropGadget(url, name);
-          });
-
-          $(id).hover(
-            function(){
-              $(this).css("color", "blue");
-              $(this).append($("<span> [追加する] </span>"));
-            },
-            function(){
-              $(this).css("color", "black");
-              $(this).find("span:last").remove();
-            }
-          );
-        };
-
-        function convert_url(param){
-          return "https://" + param + ".youroom.in/";
-        };
-
-        function group_gadget_url(name){
-          return "http://localhost:3000/youroom/show/"+name;
-        };
-
-        function render_room(name, url, count) {
-          var room_ui = document.getElementById("room_list");
-          // TODO: refactoring
-          // set li
-          var li_elm = document.createElement("li");
-          li_elm.setAttribute("id", "room"+count);
-          li_elm.style.marginBottom= 5;
-          li_elm.style.borderBottom = "1px dotted silver";
-
-          // set img
-          var img_elm = document.createElement("img");
-          img_elm.src = picture_url(url);
-          img_elm.style.height = 25;
-          img_elm.style.width = 30;
-          li_elm.appendChild(img_elm);
-
-          // set span tag
-          var span_elm = document.createElement("span");
-          span_elm.innerHTML = name;
-          span_elm.style.marginLeft = 5;
-          li_elm.appendChild(span_elm);
-
-          room_ui.appendChild(li_elm);
-        };
-
-        function picture_url(url){
-          return url + "picture";
-        };
-
-        function initialize_room_list(){
+        function fetchData(url){
+          alert(url);
           // get information with infoscoop authentication
-          gadgets.io.makeRequest("http://localhost:3000/youroom/list_html",
-                                 function(response) { make_room_list(response.data); },
+          gadgets.io.makeRequest(url,
+                                 function(response) { createGroupEntries(response.data); },
                                  { AUTHORIZATION: gadgets.io.AuthorizationType.IS_SEND_PORTAL_UID_HEADER });
+        }
 
-        };
+        function boot(){
+          fetchData("http://localhost:3000/youroom/entries/" + "<%= @room_id %>");
+        }
 
-        initialize_room_list();
+        boot();
       });
-    </script>
+  </script>
 
-    <div id="main">
-      <h5><img src="https://dl.dropbox.com/u/7052609/default_group_picture.png" style="width:15px; height:15px;"/> 全て/未読ガジェットの追加</h5>
-      <ul>
-        <li><a id="all" style="border-bottom: 1px dotted silver;">全て</a></li>
-        <li><a id="not_read_only" style="border-bottom: 1px dotted silver;">未読</a></li>
-      </ul>
+  <div id="main">
 
-      <h5><img src="https://dl.dropbox.com/u/7052609/l_06.gif" style="width:20px; height:20px;"/>参加ルーム一覧</h5>
-      <ul id="room_list">
-      </ul>
-    </div>
+  </div>
   ]]></Content>
 </Module>
 
