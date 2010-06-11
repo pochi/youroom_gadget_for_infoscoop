@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Module>
+  <ModulePrefs title="youRoom Room">
+    <Require feature="opensocial-0.8" />
+    <Require feature="locked-domain"/>
+    <Require feature="setprefs"/>
+    <Require feature="dynamic-height"/>
+    <OAuth>
+      <Service name="youroom">
+        <Access url="http://youroom.in/oauth/access_token" method="GET" />
+        <Request url="http://youroom.in/oauth/request_token" method="GET" />
+        <Authorization url="http://youroom.in/oauth/authorize?oauth_callback=http://oauth.gmodules.com/gadgets/oauthcallback" />
+      </Service>
+    </OAuth>
+  </ModulePrefs>
+  <UserPref name="roomId"/>
+  <Content type="html">
+  <![CDATA[
+
+  <!-- shindig oauth popup handling code -->
+  <script src="http://gadget-doc-examples.googlecode.com/svn/trunk/opensocial-gadgets/popup.js"></script>
+
+  <style>
+  #main {
+    margin: 0px;
+    padding: 0px;
+    font-size: small;
+  }
+  .entry {
+    border-bottom: 1px solid silver;
+    padding: 4px 0px;
+  }
+  .entry img {
+    float: left;
+    margin: 4px;
+  }
+  .entry .name {
+    color: glay;
+  }
+  .clear_left {
+    clear: left;
+  }
+  .reset {
+  }
+  .room {
+    margin: 3px 0;
+  }
+  .link {
+    color: blue;
+    cursor: pointer;
+  }
+  .link:hover {
+    text-decoration: underline;
+  }
+  form textarea {
+    width: 100%;
+  }
+  </style>
+
+  <div id="main" style="display: none">
+  </div>
+
+  <div id="approval" style="display: none">
+    <img src="http://gadget-doc-examples.googlecode.com/svn/trunk/images/new.gif">
+    <a href="#" id="personalize">Personalize this gadget</a>
+  </div>
+
+  <div id="waiting" style="display: none">
+    Please click
+    <a href="#" id="approvaldone">I've approved access</a>
+    once you've approved access to your data.
+  </div>
+
+  <script type="text/javascript">
+    var prefs = new gadgets.Prefs();
+
+    function showOneSection(toshow) {
+      var main = document.getElementById('main');
+      var sections = [ 'main', 'approval', 'waiting' ];
+      for (var i=0; i < sections.length; ++i) {
+        var s = sections[i];
+        var el = document.getElementById(s);
+        if (s === toshow) {
+          el.style.display = "block";
+        } else {
+          el.style.display = "none";
+        }
+      }
+    }
+
+    function showEachEntry(entry, mainDom) {
+      var nameElem = document.createElement('div');
+      nameElem.setAttribute('class', 'name');
+      nameElem.appendChild(document.createTextNode(entry["participation"]["name"]));
+
+      var contentElem = document.createElement('div');
+      contentElem.setAttribute('class', 'content');
+      var valueNode = document.createTextNode(entry["content"]);
+      contentElem.appendChild(valueNode);
+
+      // Create profile pitcutre
+      // http://r17.youroom.sg/participations/117/picture?1267145048
+      var imageElem = document.createElement('img');
+      imageElem.src = 'https://' + getRoomId() + '.youroom.in/participations/' + entry["participation"]["id"] + '/picture';
+      imageElem.width = 48;
+      imageElem.height = 48;
+
+      var clearElem = document.createElement('div');
+      clearElem.setAttribute('class', 'clear_left');
+
+      var entryElem = document.createElement('div');
+      entryElem.setAttribute('class', 'entry');
+      entryElem.appendChild(imageElem);
+      entryElem.appendChild(nameElem);
+      entryElem.appendChild(contentElem);
+      entryElem.appendChild(clearElem);
+
+      mainDom.appendChild(entryElem);
+    }
+
+    // Process returned JSON feed to display data.
+    function showEntries(result) {
+      showOneSection('main');
+      var mainDom = document.getElementById("main");
+
+      // Title
+      var titleElement = document.createElement('div');
+      titleElement.appendChild(document.createTextNode(getRoomId()));
+      mainDom.appendChild(titleElement);
+
+      // Form
+      var formElem = document.createElement('form');
+      formElem.onsubmit = submitComment;
+      var textElem = document.createElement('textarea');
+      textElem.setAttribute('name', "content");
+      var submitElem = document.createElement('input');
+      submitElem.type = "submit";
+      formElem.appendChild(textElem);
+      formElem.appendChild(submitElem);
+      mainDom.appendChild(formElem);
+
+      // Entries
+      for(var i = 0; i < result.length; i++) {
+        entry = result[i];
+        showEachEntry(entry["entry"], mainDom);
+      }
+
+      // Reset
+      var resetElement = document.createElement('div');
+      resetElement.setAttribute('class', "reset link");
+      resetElement.appendChild(document.createTextNode('Change room'));
+      resetElement.onclick = function(){
+        prefs.set('roomId', "");
+        bootWithClear();
+      }
+      mainDom.appendChild(resetElement);
+
+      gadgets.window.adjustHeight()
+    }
+
+    function getRoomId() {
+      var roomId = prefs.getString("roomId");
+      return roomId;
+    }
+
+    function setRoomId(roomId) {
+      return function(event){
+        var roomId = this.getAttribute('data');
+        prefs.set('roomId', roomId);
+        bootWithClear();
+      }
+    }
+
+    function showEachRoom(room, mainDom) {
+      var nameElem = document.createElement('div');
+      nameElem.setAttribute('class', 'name');
+      nameElem.appendChild(document.createTextNode(room["name"]));
+
+      var roomElem = document.createElement('div');
+      roomElem.setAttribute('class', 'room link');
+      roomElem.setAttribute('data', room["to_param"]);
+      roomElem.appendChild(nameElem);
+      roomElem.onclick = setRoomId(room["to_param"]);
+
+      mainDom.appendChild(roomElem);
+    }
+
+    function showRooms(result) {
+      showOneSection('main');
+      var mainDom = document.getElementById("main");
+
+      for(var i = 0; i < result.length; i++) {
+        entry = result[i];
+        showEachRoom(entry["group"], mainDom);
+      }
+
+      gadgets.window.adjustHeight()
+    }
+
+    function submitComment() {
+      if (this.content.value != "") {
+        postEntry(this.content.value);
+      } else {
+        alert("Input content");
+      }
+      return false;
+    }
+
+    // Invoke makeRequest() to fetch data from the service provider endpoint.
+    // Depending on the results of makeRequest, decide which version of the UI
+    // to ask showOneSection() to display. If user has approved access to his
+    // or her data, display data.
+    // If the user hasn't approved access yet, response.oauthApprovalUrl contains a
+    // URL that includes a Google-supplied request token. This is presented in the
+    // gadget as a link that the user clicks to begin the approval process.
+    function fetchData(url, successCallback){
+      callYouRoom(url, "get", successCallback);
+    }
+
+    function callYouRoom(url, method, successCallback, postdata){
+      var params = {};
+
+      params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
+      params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.OAUTH;
+      params[gadgets.io.RequestParameters.OAUTH_SERVICE_NAME] = "youroom";
+      params[gadgets.io.RequestParameters.OAUTH_USE_TOKEN] = "always";
+
+      if (method == "post") {
+        params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+      } else {
+        params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.GET;
+      }
+
+      if (postdata != null) {
+        postdata = gadgets.io.encodeValues(postdata);
+        params[gadgets.io.RequestParameters.POST_DATA]= postdata;
+      }
+
+      gadgets.io.makeRequest(url, function (response) {
+        if (response.oauthApprovalUrl) {
+          // Create the popup handler. The onOpen function is called when the user
+          // opens the popup window. The onClose function is called when the popup
+          // window is closed.
+          var popup = shindig.oauth.popup({
+            destination: response.oauthApprovalUrl,
+            windowOptions: null,
+            onOpen: function() { showOneSection('waiting'); },
+            onClose: function() { bootWithClear(); }
+          });
+          // Use the popup handler to attach onclick handlers to UI elements.  The
+          // createOpenerOnClick() function returns an onclick handler to open the
+          // popup window.  The createApprovedOnClick function returns an onclick
+          // handler that will close the popup window and attempt to fetch the user's
+          // data again.
+          var personalize = document.getElementById('personalize');
+          personalize.onclick = popup.createOpenerOnClick();
+          var approvaldone = document.getElementById('approvaldone');
+          approvaldone.onclick = popup.createApprovedOnClick();
+          showOneSection('approval');
+        } else if (response.data) {
+          showOneSection('main');
+          successCallback(response.data);
+        } else {
+          // The response.oauthError and response.oauthErrorText values may help debug
+          // problems with your gadget.
+          var main = document.getElementById('main');
+          var err = document.createTextNode('OAuth error: ' +
+            response.oauthError + ': ' + response.oauthErrorText);
+          main.appendChild(err);
+          showOneSection('main');
+        }
+      }, params);
+    }
+
+    function postEntry(content) {
+      url = "https://" + getRoomId() + ".youroom.in/entries?format=json";
+      callYouRoom(url, "post", bootWithClear, {"entry[content]":content});
+    }
+
+    function fetchEntries() {
+      var url = "https://" + getRoomId() + ".youroom.in/?format=json";
+      fetchData(url, showEntries);
+    }
+
+    function fetchRooms() {
+      var url = "https://home.youroom.in/groups/my.json";
+      fetchData(url, showRooms);
+    }
+
+    function boot() {
+      if (getRoomId() == "") {
+        fetchRooms();
+      } else {
+        fetchEntries();
+      }
+    }
+
+    function bootWithClear() {
+      var main = document.getElementById('main');
+      // remove childen dom
+      while(main.firstChild){
+        main.removeChild(main.firstChild);
+      }
+
+      boot();
+    }
+
+    // Call fetchData() when gadget loads.
+    gadgets.util.registerOnLoadHandler(boot);
+  </script>
+  ]]>
+  </Content>
+</Module>

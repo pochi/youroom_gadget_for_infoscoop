@@ -16,6 +16,9 @@
         font-size: small;
         width: 100%;
       }
+      #main h5 {
+        padding: 0;
+      }
     </style>
 
     <script type="text/javascript">
@@ -53,14 +56,15 @@
         function make_room_list(room_list) {
           eval(room_list).each(function(room, count) {
             render_room(room.group.name, convert_url(room.group.to_param), (count+1).toString());
-            set_link_action(room.group.name, convert_url(room.group.to_param), (count+1).toString());
+            set_link_action(room.group.name, group_gadget_url(room.group.to_param), (count+1).toString());
           });
         };
 
         function set_link_action(name, url, num) {
           var id = "#room"+num;
           $(id).click(function() {
-            _IS_DropMiniBrowser(url, name, url);
+            //_IS_DropMiniBrowser(url, name, url);
+            _IS_DropGadget(url, name);
           });
 
           $(id).hover(
@@ -73,11 +77,14 @@
               $(this).find("span:last").remove();
             }
           );
-
         };
 
         function convert_url(param){
           return "https://" + param + ".youroom.in/";
+        };
+
+        function group_gadget_url(name){
+          return "http://localhost:3000/youroom/show/"+name;
         };
 
         function render_room(name, url, count) {
@@ -93,7 +100,7 @@
           var img_elm = document.createElement("img");
           img_elm.src = picture_url(url);
           img_elm.style.height = 25;
-          img_elm.style.width = 35;
+          img_elm.style.width = 30;
           li_elm.appendChild(img_elm);
 
           // set span tag
@@ -119,15 +126,13 @@
 
         initialize_room_list();
       });
-
-
     </script>
 
     <div id="main">
       <h5><img src="https://dl.dropbox.com/u/7052609/default_group_picture.png" style="width:15px; height:15px;"/> 全て/未読ガジェットの追加</h5>
       <ul>
-        <li><a id="all" style="border-bottom: 1px dotted silver; width: 35px;">全て</a></li>
-        <li><a id="not_read_only" style="border-bottom: 1px dotted silver; width: 35px;">未読</a></li>
+        <li><a id="all" style="border-bottom: 1px dotted silver;">全て</a></li>
+        <li><a id="not_read_only" style="border-bottom: 1px dotted silver;">未読</a></li>
       </ul>
 
       <h5><img src="https://dl.dropbox.com/u/7052609/l_06.gif" style="width:20px; height:20px;"/>参加ルーム一覧</h5>

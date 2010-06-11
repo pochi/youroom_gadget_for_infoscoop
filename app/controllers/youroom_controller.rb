@@ -1,7 +1,11 @@
 class YouroomController < ApplicationController
-  before_filter :setup_user
+  before_filter :setup_user, :only=>[:show, :list_html]
 
   def index
+  end
+
+  def show
+    logger.info params.inspect
   end
 
   def list_html

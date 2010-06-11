@@ -1,0 +1,48 @@
+      function make_room_list(room_list) {
+        eval(room_list).each(function(room, _) {
+          render_room(room.group.name, convert_url(room.group.to_param)); });
+      };
+
+      function convert_url(param){
+        return "https://" + param + ".youroom.in/";
+      };
+
+      function render_room(name, url){
+        var room_ui = document.getElementById("room_list");
+        // TODO: refactoring
+        // set li
+        var li_elm = document.createElement("li");
+        li_elm.style.fontSize = 12;
+        li_elm.style.width = 250;
+        li_elm.style.marginBottom= 5;
+        li_elm.style.borderBottom = "1px dotted silver";
+
+        // set img
+        var img_elm = document.createElement("img");
+        img_elm.src = picture_url(url);
+        img_elm.style.height = 25;
+        img_elm.style.width = 35;
+        li_elm.appendChild(img_elm);
+
+        // set a
+        var a_elm = document.createElement("span");
+        a_elm. = name;
+        span_elm.style.marginLeft = 5;
+        li_elm.appendChild(span_elm);
+
+        room_ui.appendChild(li_elm);
+      };
+
+      function picture_url(url){
+        return url + "picture";
+      };
+
+      function initialize_room_list(){
+        // get information with infoscoop authentication
+        gadgets.io.makeRequest("http://localhost:3000/youroom/list_html",
+                               function(response) { make_room_list(response.data); },
+                               { AUTHORIZATION: gadgets.io.AuthorizationType.IS_SEND_PORTAL_UID_HEADER });
+      };
+
+      // jQuery(function(){...}); と同じ
+      gadgets.util.registerOnLoadHandler(initialize_room_list());
