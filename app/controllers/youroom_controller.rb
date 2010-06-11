@@ -1,5 +1,3 @@
-require 'youroom_api'
-
 class YouroomController < ApplicationController
   def index
   end

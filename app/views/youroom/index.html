@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Youroom Gadget" author_email="pochi.black@gmail.com">
+  <ModulePrefs title="Youroom ガジェット" author_email="pochi.black@gmail.com" scrolling="true">
   </ModulePrefs>
   <Content type="html"><![CDATA[
     <script type="text/javascript" src="http://localhost:3000/javascripts/jquery-1.4.2.min.js" />
@@ -16,17 +16,40 @@
 
       function render_room(name, url){
         var room_ui = document.getElementById("room_list");
+        // TODO: refactoring
+        // set li
         var li_elm = document.createElement("li");
-        li_elm.innerHTML = name;
+        li_elm.style.fontSize = 12;
+        li_elm.style.width = 250;
+        li_elm.style.marginBottom= 5;
+        li_elm.style.borderBottom = "1px dotted silver";
+
+        // set img
+        var img_elm = document.createElement("img");
+        img_elm.src = picture_url(url);
+        img_elm.style.height = 25;
+        img_elm.style.width = 35;
+        li_elm.appendChild(img_elm);
+
+        // set a
+        var span_elm = document.createElement("span");
+        span_elm.innerHTML = name;
+        span_elm.style.marginLeft = 5;
+        li_elm.appendChild(span_elm);
+
         room_ui.appendChild(li_elm);
       };
 
-      function initialize_room_list(){
+      function picture_url(url){
+        return url + "picture";
+      };
 
-        /* get information with infoscoop authentication*/
+      function initialize_room_list(){
+        // get information with infoscoop authentication
         gadgets.io.makeRequest("http://localhost:3000/youroom/list_html",
                                function(response) { make_room_list(response.data); },
                                { AUTHORIZATION: gadgets.io.AuthorizationType.IS_SEND_PORTAL_UID_HEADER });
+
       };
 
       // jQuery(function(){...}); と同じ
@@ -34,10 +57,8 @@
     </script>
 
     <h5>参加ルーム一覧</h5>
-    <div>
-      <ul id="room_list">
-      </ul>
-    </div>
+    <ul id="room_list" style="list-style:none">
+    </ul>
   ]]></Content>
 </Module>
 

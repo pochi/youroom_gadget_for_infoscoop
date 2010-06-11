@@ -2937,3 +2937,1147 @@ Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
 Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 20:53:38) [GET]
 [{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
 Completed in 3827ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 20:57:33) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 20:57:33) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3859ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 20:58:42) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 20:58:42) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3674ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 20:59:34) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 20:59:34) [GET]
+Rendering youroom/index
+Completed in 73ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 20:59:34) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3111ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 20:59:37) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 20:59:38) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3327ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:01:48) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:01:48) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:01:48) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3507ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:01:55) [GET]
+Rendering youroom/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:01:55) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 2943ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:05:17) [GET]
+Rendering youroom/index
+Completed in 74ms (View: 72, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:05:17) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3976ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:05:59) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:05:59) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3456ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:06:18) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:06:18) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3121ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:07:00) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:07:01) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3250ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:07:32) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:07:33) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3179ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:07:44) [GET]
+Rendering youroom/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:07:45) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 2) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:07:45) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3162ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:07:48) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:07:48) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 4015ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:12:48) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:12:48) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 4155ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:13:05) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:13:05) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3283ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:13:30) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:13:30) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3236ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:13:44) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:13:44) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3306ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:13:58) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:13:58) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3207ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:16:13) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 2) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:16:24) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:16:45) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:17:03) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:17:03) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3698ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:21:50) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:21:51) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 5113ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:22:23) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:22:26) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3294ms (View: 3, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:22:45) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:22:46) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3025ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:23:36) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:23:39) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3416ms (View: 1, DB: 1) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:24:27) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:24:28) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3892ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:25:48) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:25:49) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 5457ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:26:56) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:26:56) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3734ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:27:27) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:27:28) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3500ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:27:58) [GET]
+Rendering youroom/index
+Completed in 77ms (View: 76, DB: 1) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:27:59) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3752ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:28:51) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:28:52) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 4165ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:29:31) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:29:32) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3571ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:30:04) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:30:04) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3412ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:30:17) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:30:18) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 2971ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:30:37) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:30:37) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3931ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:31:04) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:31:04) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3356ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:31:41) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:31:42) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3899ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:31:54) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:31:55) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3015ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:32:27) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:32:28) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 5751ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:35:17) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:35:17) [GET]
+Rendering youroom/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:35:17) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3853ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-07 21:35:21) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-07 21:35:22) [GET]
+[{"group":{"name":"youRoomAPI deveroper's room","updated_at":"2010-06-07T03:00:09Z","opened":true,"id":516,"to_param":"r516","created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"SKIP User Group","updated_at":"2010-06-07T01:26:22Z","opened":true,"id":18,"to_param":"openskip","created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"youRoom-Users(Japan)","updated_at":"2010-06-07T01:14:03Z","opened":true,"id":6,"to_param":"r6","created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"to_param":"r13","created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"to_param":"r500","created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","updated_at":"2010-06-01T13:02:07Z","opened":false,"id":29,"to_param":"skip","created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","updated_at":"2010-06-01T05:09:33Z","opened":false,"id":12,"to_param":"r12","created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"to_param":"r4","created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"to_param":"r44","created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3303ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:05:37) [GET]
+Rendering youroom/index
+Completed in 39ms (View: 37, DB: 1) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:05:43) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:06:06) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:06:08) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:10:00) [GET]
+Rendering youroom/index
+Completed in 45ms (View: 43, DB: 0) | 200 OK [http://localhost/youroom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:10:22) [GET]
+Rendering youroom/index
+Completed in 67ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:10:22) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:10:22) [GET]
+Rendering youroom/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:10:29) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:11:21) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:12:26) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:12:28) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:13:16) [GET]
+Rendering youroom/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:13:16) [GET]
+Rendering youroom/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:14:25) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:14:25) [GET]
+Rendering youroom/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:14:59) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:14:59) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:15:03) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:16:21) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:16:21) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:16:21) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:16:25) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:16:32) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:17:53) [GET]
+Rendering youroom/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:18:33) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:19:42) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (123.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (267.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100611022043)
+  [4;35;1mSQL (164.2ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `bpr` varchar(255), `mail` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100611022043')[0m
+Migrating to CreateYouroomOauths (20100611022157)
+  [4;35;1mSQL (171.0ms)[0m   [0mCREATE TABLE `youroom_oauths` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `consumer_key` varchar(255), `consumer_secret` varchar(255), `access_token` varchar(255), `access_token_secret` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100611022157')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (39.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (22.7ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mdescribe `youroom_oauths`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `youroom_oauths`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `bpr`, `mail`) VALUES('Yuichi Kuroda', '2010-06-11 02:26:14', '2010-06-11 02:26:14', 'pit01205', 'pochi.black@gmail.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mYouroomOauth Load (3.8ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mYouroomOauth Create (0.2ms)[0m   [0mINSERT INTO `youroom_oauths` (`created_at`, `updated_at`, `consumer_key`, `consumer_secret`, `user_id`, `access_token_secret`, `access_token`) VALUES('2010-06-11 02:26:26', '2010-06-11 02:26:26', NULL, NULL, 1, NULL, NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (3.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mYouroomOauth Load (0.7ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mYouroomOauth Update (0.3ms)[0m   [0;1mUPDATE `youroom_oauths` SET `consumer_secret` = 'oii4Nl9qEOhumFji6Uq6In5VU4VbhK697hV078kJ', `updated_at` = '2010-06-11 02:28:38', `consumer_key` = 'up3xopytN53tYzIiy4v7' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mYouroomOauth Load (0.4ms)[0m   [0mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mYouroomOauth Update (0.3ms)[0m   [0mUPDATE `youroom_oauths` SET `updated_at` = '2010-06-11 02:31:53', `access_token` = '3C8vEjCM7SyV20uN9l3B', `access_token_secret` = '0shf4y5HWim5Qco0LpLDCyv2i2JBuKEapabvipD2' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:32:03) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:32:17) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:32:35) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:32:35) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:32:38) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 11) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:33:30) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:34:34) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:35:42) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:36:16) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:36:33) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:36:33) [GET]
+Rendering youroom/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:36:41) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:36:41) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:37:10) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:37:10) [GET]
+Rendering youroom/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-11 11:37:10) [GET]
+[{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","to_param":"r12","updated_at":"2010-06-11T02:01:09Z","opened":false,"id":12,"created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"youRoom-Users(Japan)","to_param":"r6","updated_at":"2010-06-11T01:56:53Z","opened":true,"id":6,"created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"youRoomAPI deveroper's room","to_param":"r516","updated_at":"2010-06-11T01:19:26Z","opened":true,"id":516,"created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","to_param":"skip","updated_at":"2010-06-11T00:30:32Z","opened":false,"id":29,"created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"SKIP User Group","to_param":"openskip","updated_at":"2010-06-10T10:43:27Z","opened":true,"id":18,"created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","to_param":"r13","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","to_param":"r500","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","to_param":"r4","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","to_param":"r44","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 4583ms (View: 42, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:38:01) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:38:01) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-11 11:38:01) [GET]
+[{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","to_param":"r12","updated_at":"2010-06-11T02:01:09Z","opened":false,"id":12,"created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"youRoom-Users(Japan)","to_param":"r6","updated_at":"2010-06-11T01:56:53Z","opened":true,"id":6,"created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"youRoomAPI deveroper's room","to_param":"r516","updated_at":"2010-06-11T01:19:26Z","opened":true,"id":516,"created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","to_param":"skip","updated_at":"2010-06-11T00:30:32Z","opened":false,"id":29,"created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"SKIP User Group","to_param":"openskip","updated_at":"2010-06-10T10:43:27Z","opened":true,"id":18,"created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","to_param":"r13","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","to_param":"r500","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","to_param":"r4","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","to_param":"r44","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3473ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:38:28) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:38:29) [GET]
+Rendering youroom/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:38:57) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:38:58) [GET]
+Rendering youroom/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-11 11:38:58) [GET]
+[{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","to_param":"r12","updated_at":"2010-06-11T02:01:09Z","opened":false,"id":12,"created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"youRoom-Users(Japan)","to_param":"r6","updated_at":"2010-06-11T01:56:53Z","opened":true,"id":6,"created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"youRoomAPI deveroper's room","to_param":"r516","updated_at":"2010-06-11T01:19:26Z","opened":true,"id":516,"created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","to_param":"skip","updated_at":"2010-06-11T00:30:32Z","opened":false,"id":29,"created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"SKIP User Group","to_param":"openskip","updated_at":"2010-06-10T10:43:27Z","opened":true,"id":18,"created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","to_param":"r13","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","to_param":"r500","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","to_param":"r4","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","to_param":"r44","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3266ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:39:24) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:39:24) [GET]
+Rendering youroom/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-11 11:39:25) [GET]
+[{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","to_param":"r12","updated_at":"2010-06-11T02:01:09Z","opened":false,"id":12,"created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"youRoom-Users(Japan)","to_param":"r6","updated_at":"2010-06-11T01:56:53Z","opened":true,"id":6,"created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"youRoomAPI deveroper's room","to_param":"r516","updated_at":"2010-06-11T01:19:26Z","opened":true,"id":516,"created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","to_param":"skip","updated_at":"2010-06-11T00:30:32Z","opened":false,"id":29,"created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"SKIP User Group","to_param":"openskip","updated_at":"2010-06-10T10:43:27Z","opened":true,"id":18,"created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","to_param":"r13","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","to_param":"r500","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","to_param":"r4","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","to_param":"r44","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3392ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:39:57) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:39:57) [GET]
+Rendering youroom/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-11 11:39:57) [GET]
+[{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","to_param":"r12","updated_at":"2010-06-11T02:01:09Z","opened":false,"id":12,"created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"youRoom-Users(Japan)","to_param":"r6","updated_at":"2010-06-11T01:56:53Z","opened":true,"id":6,"created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"youRoomAPI deveroper's room","to_param":"r516","updated_at":"2010-06-11T01:19:26Z","opened":true,"id":516,"created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","to_param":"skip","updated_at":"2010-06-11T00:30:32Z","opened":false,"id":29,"created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"SKIP User Group","to_param":"openskip","updated_at":"2010-06-10T10:43:27Z","opened":true,"id":18,"created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","to_param":"r13","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","to_param":"r500","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","to_param":"r4","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","to_param":"r44","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3138ms (View: 1, DB: 1) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:40:29) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:40:29) [GET]
+Rendering youroom/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-11 11:40:30) [GET]
+[{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","to_param":"r12","updated_at":"2010-06-11T02:01:09Z","opened":false,"id":12,"created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"youRoom-Users(Japan)","to_param":"r6","updated_at":"2010-06-11T01:56:53Z","opened":true,"id":6,"created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"youRoomAPI deveroper's room","to_param":"r516","updated_at":"2010-06-11T01:19:26Z","opened":true,"id":516,"created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","to_param":"skip","updated_at":"2010-06-11T00:30:32Z","opened":false,"id":29,"created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"SKIP User Group","to_param":"openskip","updated_at":"2010-06-10T10:43:27Z","opened":true,"id":18,"created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","to_param":"r13","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","to_param":"r500","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","to_param":"r4","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","to_param":"r44","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3384ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:40:49) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:40:49) [GET]
+Rendering youroom/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-11 11:40:50) [GET]
+[{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","to_param":"r12","updated_at":"2010-06-11T02:01:09Z","opened":false,"id":12,"created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"youRoom-Users(Japan)","to_param":"r6","updated_at":"2010-06-11T01:56:53Z","opened":true,"id":6,"created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"youRoomAPI deveroper's room","to_param":"r516","updated_at":"2010-06-11T01:19:26Z","opened":true,"id":516,"created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","to_param":"skip","updated_at":"2010-06-11T00:30:32Z","opened":false,"id":29,"created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"SKIP User Group","to_param":"openskip","updated_at":"2010-06-10T10:43:27Z","opened":true,"id":18,"created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","to_param":"r13","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","to_param":"r500","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","to_param":"r4","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","to_param":"r44","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3219ms (View: 1, DB: 1) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:41:09) [GET]
+Rendering youroom/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:41:09) [GET]
+Rendering youroom/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:45:36) [GET]
+Rendering youroom/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:45:36) [GET]
+Rendering youroom/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-11 11:45:37) [GET]
+[{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","to_param":"r12","updated_at":"2010-06-11T02:01:09Z","opened":false,"id":12,"created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"youRoom-Users(Japan)","to_param":"r6","updated_at":"2010-06-11T01:56:53Z","opened":true,"id":6,"created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"youRoomAPI deveroper's room","to_param":"r516","updated_at":"2010-06-11T01:19:26Z","opened":true,"id":516,"created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","to_param":"skip","updated_at":"2010-06-11T00:30:32Z","opened":false,"id":29,"created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"SKIP User Group","to_param":"openskip","updated_at":"2010-06-10T10:43:27Z","opened":true,"id":18,"created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","to_param":"r13","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","to_param":"r500","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","to_param":"r4","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","to_param":"r44","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 4131ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:45:47) [GET]
+Rendering youroom/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-11 11:45:48) [GET]
+[{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","to_param":"r12","updated_at":"2010-06-11T02:01:09Z","opened":false,"id":12,"created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"youRoom-Users(Japan)","to_param":"r6","updated_at":"2010-06-11T01:56:53Z","opened":true,"id":6,"created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"youRoomAPI deveroper's room","to_param":"r516","updated_at":"2010-06-11T01:19:26Z","opened":true,"id":516,"created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","to_param":"skip","updated_at":"2010-06-11T00:30:32Z","opened":false,"id":29,"created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"SKIP User Group","to_param":"openskip","updated_at":"2010-06-10T10:43:27Z","opened":true,"id":18,"created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","to_param":"r13","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","to_param":"r500","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","to_param":"r4","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","to_param":"r44","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3492ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#index (for 127.0.0.1 at 2010-06-11 11:46:05) [GET]
+Rendering youroom/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/index]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#list_html (for 127.0.0.1 at 2010-06-11 11:46:06) [GET]
+[{"group":{"name":"MUIT-TIS-SonicGarden\u9023\u7d61\u5e33","to_param":"r12","updated_at":"2010-06-11T02:01:09Z","opened":false,"id":12,"created_at":"2009-08-25T02:37:35Z"}},{"group":{"name":"youRoom-Users(Japan)","to_param":"r6","updated_at":"2010-06-11T01:56:53Z","opened":true,"id":6,"created_at":"2009-08-14T06:46:07Z"}},{"group":{"name":"youRoomAPI deveroper's room","to_param":"r516","updated_at":"2010-06-11T01:19:26Z","opened":true,"id":516,"created_at":"2010-04-30T04:55:07Z"}},{"group":{"name":"\u30a2\u30bd\u30b7\u30a8 online","to_param":"skip","updated_at":"2010-06-11T00:30:32Z","opened":false,"id":29,"created_at":"2009-10-01T01:02:18Z"}},{"group":{"name":"SKIP User Group","to_param":"openskip","updated_at":"2010-06-10T10:43:27Z","opened":true,"id":18,"created_at":"2009-09-07T05:46:26Z"}},{"group":{"name":"\u91d1\u66dc\u4f1a","to_param":"r13","updated_at":"2010-06-04T08:16:59Z","opened":false,"id":13,"created_at":"2009-08-28T08:24:26Z"}},{"group":{"name":"\u81ea\u5206\u7528","to_param":"r500","updated_at":"2010-06-03T04:22:42Z","opened":false,"id":500,"created_at":"2010-04-27T04:26:01Z"}},{"group":{"name":"Ruby\u864e\u306e\u7a74","to_param":"r4","updated_at":"2010-06-01T00:57:49Z","opened":true,"id":4,"created_at":"2009-08-12T06:42:11Z"}},{"group":{"name":"\u95a2\u897f\u306e\u304a\u90e8\u5c4b","to_param":"r44","updated_at":"2010-03-17T04:16:43Z","opened":false,"id":44,"created_at":"2009-11-13T06:40:00Z"}}]
+Completed in 3528ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/list_html]
