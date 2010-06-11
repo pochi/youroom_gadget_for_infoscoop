@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Module>
+  <ModulePrefs title="youRoom Home" scrolling="true">
+    <Require feature="opensocial-0.8" />
+    <Require feature="locked-domain"/>
+    <OAuth>
+      <Service name="youroom">
+        <Access url="http://youroom.in/oauth/access_token" method="GET" />
+        <Request url="http://youroom.in/oauth/request_token" method="GET" />
+        <Authorization url="http://youroom.in/oauth/authorize?oauth_callback=http://oauth.gmodules.com/gadgets/oauthcallback" />
+      </Service>
+    </OAuth>
+  </ModulePrefs>
+  <Content type="html">
+  <![CDATA[
+
+  <!-- shindig oauth popup handling code -->
+  <script src="http://gadget-doc-examples.googlecode.com/svn/trunk/opensocial-gadgets/popup.js"></script>
+
+  <style>
+  #main {
+    margin: 0px;
+    padding: 0px;
+    font-size: small;
+  }
+  .entry {
+    border-bottom: 1px solid silver;
+    padding: 4px 0px;
+  }
+  .entry img {
+    float: left;
+    margin: 4px;
+  }
+  .entry .name {
+    color: blue;
+  }
+  .clear_left {
+    clear: left;
+  }
+  </style>
+
+  <div id="main" style="display: none">
+  </div>
+
+  <div id="approval" style="display: none">
+    <img src="http://gadget-doc-examples.googlecode.com/svn/trunk/images/new.gif">
+    <a href="#" id="personalize">Personalize this gadget</a>
+  </div>
+
+  <div id="waiting" style="display: none">
+    Please click
+    <a href="#" id="approvaldone">I've approved access</a>
+    once you've approved access to your data.
+  </div>
+
+  <script type="text/javascript">
+    // Display UI depending on OAuth access state of the gadget (see <divs> above).
+    // If user hasn't approved access to data, provide a "Personalize this gadget" link
+    // that contains the oauthApprovalUrl returned from makeRequest.
+    //
+    // If the user has opened the popup window but hasn't yet approved access, display
+    // text prompting the user to confirm that s/he approved access to data.  The user
+    // may not ever need to click this link, if the gadget is able to automatically
+    // detect when the user has approved access, but showing the link gives users
+    // an option to fetch their data even if the automatic detection fails.
+    //
+    // When the user confirms access, the fetchData() function is invoked again to
+    // obtain and display the user's data.
+    function showOneSection(toshow) {
+      var sections = [ 'main', 'approval', 'waiting' ];
+      for (var i=0; i < sections.length; ++i) {
+        var s = sections[i];
+        var el = document.getElementById(s);
+        if (s === toshow) {
+          el.style.display = "block";
+        } else {
+          el.style.display = "none";
+        }
+      }
+    }
+
+    function showEachResult(entry, mainDom) {
+      var nameElem = document.createElement('div');
+      nameElem.setAttribute('class', 'name');
+      nameElem.appendChild(document.createTextNode(entry["participation"]["name"]));
+
+      var contentElem = document.createElement('div');
+      contentElem.setAttribute('class', 'content');
+      var valueNode = document.createTextNode(entry["content"]);
+      contentElem.appendChild(valueNode);
+
+      // Create profile pitcutre
+      // http://r17.youroom.sg/participations/117/picture?1267145048
+      var imageElem = document.createElement('img');
+      imageElem.setAttribute('src', 'https://' + entry["participation"]["group"]["to_param"] + '.youroom.in/participations/' + entry["participation"]["id"] + '/picture');
+
+      var clearElem = document.createElement('div');
+      clearElem.setAttribute('class', 'clear_left');
+
+      var entryElem = document.createElement('div');
+      entryElem.setAttribute('class', 'entry');
+      entryElem.appendChild(imageElem);
+      entryElem.appendChild(nameElem);
+      entryElem.appendChild(contentElem);
+      entryElem.appendChild(clearElem);
+
+      mainDom.appendChild(entryElem);
+    }
+
+    // Process returned JSON feed to display data.
+    function showResults(result) {
+      showOneSection('main');
+      var mainDom = document.getElementById("main");
+
+      /*
+      var titleElement = document.createElement('div');
+      var nameNode = document.createTextNode("Home");
+      titleElement.appendChild(nameNode);
+      mainDom.appendChild(titleElement);
+      mainDom.appendChild(document.createElement("br"));
+      */
+
+      for(var i = 0; i < result.length; i++) {
+        entry = result[i];
+        showEachResult(entry["entry"], mainDom);
+      }
+    }
+
+    // Invoke makeRequest() to fetch data from the service provider endpoint.
+    // Depending on the results of makeRequest, decide which version of the UI
+    // to ask showOneSection() to display. If user has approved access to his
+    // or her data, display data.
+    // If the user hasn't approved access yet, response.oauthApprovalUrl contains a
+    // URL that includes a Google-supplied request token. This is presented in the
+    // gadget as a link that the user clicks to begin the approval process.
+    function fetchData() {
+      var params = {};
+      url = "https://home.youroom.in/?format=json";
+      params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
+      params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.OAUTH;
+      params[gadgets.io.RequestParameters.OAUTH_SERVICE_NAME] = "youroom";
+      params[gadgets.io.RequestParameters.OAUTH_USE_TOKEN] = "always";
+      params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.GET;
+
+      gadgets.io.makeRequest(url, function (response) {
+        if (response.oauthApprovalUrl) {
+          // Create the popup handler. The onOpen function is called when the user
+          // opens the popup window. The onClose function is called when the popup
+          // window is closed.
+          var popup = shindig.oauth.popup({
+            destination: response.oauthApprovalUrl,
+            windowOptions: null,
+            onOpen: function() { showOneSection('waiting'); },
+            onClose: function() { fetchData(); }
+          });
+          // Use the popup handler to attach onclick handlers to UI elements.  The
+          // createOpenerOnClick() function returns an onclick handler to open the
+          // popup window.  The createApprovedOnClick function returns an onclick
+          // handler that will close the popup window and attempt to fetch the user's
+          // data again.
+          var personalize = document.getElementById('personalize');
+          personalize.onclick = popup.createOpenerOnClick();
+          var approvaldone = document.getElementById('approvaldone');
+          approvaldone.onclick = popup.createApprovedOnClick();
+          showOneSection('approval');
+        } else if (response.data) {
+          showOneSection('main');
+          showResults(response.data);
+        } else {
+          // The response.oauthError and response.oauthErrorText values may help debug
+          // problems with your gadget.
+          var main = document.getElementById('main');
+          var err = document.createTextNode('OAuth error: ' +
+            response.oauthError + ': ' + response.oauthErrorText);
+          main.appendChild(err);
+          showOneSection('main');
+        }
+      }, params);
+    }
+    // Call fetchData() when gadget loads.
+    gadgets.util.registerOnLoadHandler(fetchData);
+  </script>
+  ]]>
+  </Content>
+</Module>

@@ -4,31 +4,71 @@
   </ModulePrefs>
   <Content type="html"><![CDATA[
     <script type="text/javascript" src="https://dl.dropbox.com/u/7052609/opensocial-jquery.min.js"></script>
+
+    <style>
+      #main {
+        font-size: small;
+      }
+      #main ul {
+        list-style: none;
+      }
+      #main li {
+        font-size: small;
+      }
+    </style>
+
     <script type="text/javascript">
       $(function(){
         $("#all").click(function(){
           _IS_DropMiniBrowser("https://home.youroom.in/", "全てのつぶやき", "https://home.youroom.in/");
         });
 
+        $("#all").hover(
+          function(){
+            $(this).append($("<span> [このガジェットを追加] </span>"));
+          },
+          function(){
+            $(this).find("span:last").remove();
+          }
+        );
+
+        $("#not_read_only").hover(
+          function(){
+            $(this).append($("<span> [このガジェットを追加] </span>"));
+          },
+          function(){
+            $(this).find("span:last").remove();
+          }
+        );
+
         $("#not_read_only").click(function(){
           _IS_DropMiniBrowser("https://home.youroom.in/unreads", "未読のつぶやき", "https://home.youroom.in/unreads");
         });
 
         function make_room_list(room_list) {
-          eval(room_list).each(function(room, _) {
-            render_room(room.group.name, convert_url(room.group.to_param)); });
+          eval(room_list).each(function(room, count) {
+            render_room(room.group.name, convert_url(room.group.to_param), (count+1).toString());
+            set_link_action(room.group.name, convert_url(room.group.to_param), (count+1).toString());
+          });
+        };
+
+        function set_link_action(name, url, num) {
+          var id = "#room"+num;
+          $(id).click(function() {
+            _IS_DropMiniBrowser(url, name, url);
+          });
         };
 
         function convert_url(param){
           return "https://" + param + ".youroom.in/";
         };
 
-        function render_room(name, url){
+        function render_room(name, url, count) {
           var room_ui = document.getElementById("room_list");
           // TODO: refactoring
           // set li
           var li_elm = document.createElement("li");
-          li_elm.style.fontSize = 12;
+          li_elm.setAttribute("id", "room"+count);
           li_elm.style.width = 250;
           li_elm.style.marginBottom= 5;
           li_elm.style.borderBottom = "1px dotted silver";
@@ -67,15 +107,17 @@
 
     </script>
 
-    <h5><img src="https://dl.dropbox.com/u/7052609/default_group_picture.png" style="width:15px; height:15px;"/> 全て/未読ガジェットの追加</h5>
-    <ul style="list-style:none">
-      <li><a id="all" style="border-bottom: 1px dotted silver; width: 35px;">全てガジェットを追加</a></li>
-      <li><a id="not_read_only" style="border-bottom: 1px dotted silver; width: 35px;">未読ガジェットを追加</a></li>
-    </ul>
+    <div id="main">
+      <h5><img src="https://dl.dropbox.com/u/7052609/default_group_picture.png" style="width:15px; height:15px;"/> 全て/未読ガジェットの追加</h5>
+      <ul>
+        <li><a id="all" style="border-bottom: 1px dotted silver; width: 35px;">全て</a></li>
+        <li><a id="not_read_only" style="border-bottom: 1px dotted silver; width: 35px;">未読</a></li>
+      </ul>
 
-    <h5><img src="https://dl.dropbox.com/u/7052609/l_06.gif" style="width:20px; height:20px;"/>参加ルーム一覧</h5>
-    <ul id="room_list" style="list-style:none">
-    </ul>
+      <h5><img src="https://dl.dropbox.com/u/7052609/l_06.gif" style="width:20px; height:20px;"/>参加ルーム一覧</h5>
+      <ul id="room_list">
+      </ul>
+    </div>
   ]]></Content>
 </Module>
 
