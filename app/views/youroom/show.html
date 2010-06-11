@@ -44,20 +44,107 @@
 
   <script type="text/javascript">
       $(function(){
-        function createGroupEntries(data){
-          alert(data);
+        function showOneSection(toshow) {
+          var main = document.getElementById('main');
+          var sections = [ 'main' ];
+          for (var i=0; i < sections.length; ++i) {
+            var s = sections[i];
+            var el = document.getElementById(s);
+            if (s === toshow) {
+              el.style.display = "block";
+            } else {
+              el.style.display = "none";
+            }
+          }
         }
 
-        function fetchData(url){
-          alert(url);
+        function showEntries(result){
+          var mainDom = document.getElementById("main");
+
+          // Title
+          var titleElement = document.createElement('div');
+          mainDom.appendChild(titleElement);
+
+          // Form
+          var formElem = document.createElement('form');
+          formElem.onsubmit = submitComment;
+          var textElem = document.createElement('textarea');
+          textElem.setAttribute('name', "content");
+          var submitElem = document.createElement('input');
+          submitElem.type = "submit";
+          formElem.appendChild(textElem);
+          formElem.appendChild(submitElem);
+          mainDom.appendChild(formElem);
+
+          eval(result).each(function(entry, _){
+            showEachEntry(entry["entry"], mainDom);
+          });
+
+          mainDom.appendChild(resetElement);
+
+          gadgets.window.adjustHeight();
+        }
+
+        function showEachEntry(entry, mainDom) {
+          var nameElem = document.createElement('div');
+          nameElem.setAttribute('class', 'name');
+          nameElem.appendChild(document.createTextNode(entry["participation"]["name"]));
+
+          var contentElem = document.createElement('div');
+          contentElem.setAttribute('class', 'content');
+          var valueNode = document.createTextNode(entry["content"]);
+          contentElem.appendChild(valueNode);
+
+          // Create profile pitcutre
+          // http://r17.youroom.sg/participations/117/picture?1267145048
+          var imageElem = document.createElement('img');
+          imageElem.src = 'https://' + "<%= @room_id %>" + '.youroom.in/participations/' + entry["participation"]["id"] + '/picture';
+          imageElem.width = 48;
+          imageElem.height = 48;
+
+          var clearElem = document.createElement('div');
+          clearElem.setAttribute('class', 'clear_left');
+
+          var entryElem = document.createElement('div');
+          entryElem.setAttribute('class', 'entry');
+          entryElem.appendChild(imageElem);
+          entryElem.appendChild(nameElem);
+          entryElem.appendChild(contentElem);
+          entryElem.appendChild(clearElem);
+
+          mainDom.appendChild(entryElem);
+        }
+
+        function submitComment() {
+          if (this.content.value != "") {
+          } else {
+            alert("Input content");
+          }
+          return false;
+        }
+
+        function fetchData(url, successCallback){
           // get information with infoscoop authentication
           gadgets.io.makeRequest(url,
-                                 function(response) { createGroupEntries(response.data); },
+                                 function(response) {
+                                   successCallback(response.data);
+                                 },
                                  { AUTHORIZATION: gadgets.io.AuthorizationType.IS_SEND_PORTAL_UID_HEADER });
         }
 
+        function bootWithClear() {
+          var main = document.getElementById('main');
+          // remove childen dom
+          while(main.firstChild){
+            main.removeChild(main.firstChild);
+          }
+
+          boot();
+        }
+
+
         function boot(){
-          fetchData("http://localhost:3000/youroom/entries/" + "<%= @room_id %>");
+          fetchData("http://localhost:3000/youroom/entries/" + "<%= @room_id %>", showEntries);
         }
 
         boot();
@@ -65,7 +152,6 @@
   </script>
 
   <div id="main">
-
   </div>
   ]]></Content>
 </Module>

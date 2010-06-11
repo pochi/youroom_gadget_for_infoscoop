@@ -6508,3 +6508,494 @@ Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:22:00) [GET
   [4;36;1mYouroomOauth Load (0.3ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
   [4;35;1mYouroomOauth Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
 Completed in 1483ms (View: 1, DB: 45) | 200 OK [http://localhost/youroom/entries/r516]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:26:05) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:26:08) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (7.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (9.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.2ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 2091ms (View: 1, DB: 19) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:30:01) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:30:03) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.5ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (8.5ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1477ms (View: 1, DB: 12) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:32:13) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:32:14) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (6.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (3.0ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (14.2ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1337ms (View: 1, DB: 26) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:32:26) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:32:27) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.9ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (12.3ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1221ms (View: 1, DB: 16) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:33:47) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:33:49) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (14.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (55.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.3ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1829ms (View: 1, DB: 72) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:33:52) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:33:54) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (57.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (1.4ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1256ms (View: 1, DB: 63) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:36:47) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:36:48) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (8.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.3ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1536ms (View: 1, DB: 12) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:37:39) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:37:40) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (10.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.3ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1535ms (View: 1, DB: 14) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:38:18) [GET]
+  Parameters: {"id"=>"r516"}
+Rendering youroom/show
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/show/r516]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:38:19) [GET]
+  Parameters: {"id"=>"r516"}
+  [4;36;1mUser Columns (17.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (9.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (11.1ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1374ms (View: 1, DB: 41) | 200 OK [http://localhost/youroom/entries/r516]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:38:23) [GET]
+  Parameters: {"id"=>"r516"}
+Rendering youroom/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/show/r516]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:38:24) [GET]
+  Parameters: {"id"=>"r516"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (3.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.7ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1183ms (View: 1, DB: 11) | 200 OK [http://localhost/youroom/entries/r516]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:39:11) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:39:12) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (8.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (4.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.7ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1564ms (View: 1, DB: 17) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:39:13) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:39:14) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.5ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1225ms (View: 1, DB: 6) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:41:27) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:41:29) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (19.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.3ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1444ms (View: 1, DB: 23) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:41:49) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:41:50) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.4ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (6.1ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1215ms (View: 1, DB: 9) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:44:52) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:44:53) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.4ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 2342ms (View: 1, DB: 6) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:45:11) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:45:12) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (7.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.8ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1628ms (View: 1, DB: 12) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:45:24) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:45:25) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.2ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1269ms (View: 1, DB: 5) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:46:05) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:46:06) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (21.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (33.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (2.5ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1422ms (View: 1, DB: 59) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:46:44) [GET]
+  Parameters: {"id"=>"r6"}
+Rendering youroom/show
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/youroom/show/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:46:45) [GET]
+  Parameters: {"id"=>"r6"}
+  [4;36;1mUser Columns (27.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (1.1ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (9.8ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1357ms (View: 1, DB: 40) | 200 OK [http://localhost/youroom/entries/r6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:46:55) [GET]
+  Parameters: {"id"=>"r516"}
+Rendering youroom/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/show/r516]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:46:56) [GET]
+  Parameters: {"id"=>"r516"}
+  [4;36;1mUser Columns (7.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (22.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.3ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (440.4ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1646ms (View: 1, DB: 471) | 200 OK [http://localhost/youroom/entries/r516]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:47:15) [GET]
+  Parameters: {"id"=>"r12"}
+Rendering youroom/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/show/r12]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:47:16) [GET]
+  Parameters: {"id"=>"r12"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.2ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1409ms (View: 1, DB: 4) | 200 OK [http://localhost/youroom/entries/r12]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:49:11) [GET]
+  Parameters: {"id"=>"r13"}
+Rendering youroom/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/show/r13]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:49:11) [GET]
+  Parameters: {"id"=>"r13"}
+Rendering youroom/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/show/r13]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:49:13) [GET]
+  Parameters: {"id"=>"r13"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (26.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.4ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (6.7ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1275ms (View: 1, DB: 36) | 200 OK [http://localhost/youroom/entries/r13]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:49:16) [GET]
+  Parameters: {"id"=>"r12"}
+Rendering youroom/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/show/r12]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:49:18) [GET]
+  Parameters: {"id"=>"r12"}
+  [4;36;1mUser Columns (9.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.4ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1324ms (View: 1, DB: 14) | 200 OK [http://localhost/youroom/entries/r12]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:49:27) [GET]
+  Parameters: {"id"=>"r4"}
+Rendering youroom/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/show/r4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:49:27) [GET]
+  Parameters: {"id"=>"r4"}
+Rendering youroom/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/show/r4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:49:28) [GET]
+  Parameters: {"id"=>"r4"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (1.2ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1191ms (View: 1, DB: 7) | 200 OK [http://localhost/youroom/entries/r4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#show (for 127.0.0.1 at 2010-06-11 16:49:31) [GET]
+  Parameters: {"id"=>"r4"}
+Rendering youroom/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/youroom/show/r4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing YouroomController#entries (for 127.0.0.1 at 2010-06-11 16:49:33) [GET]
+  Parameters: {"id"=>"r4"}
+  [4;36;1mUser Columns (44.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (11.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`bpr` = 'pit01205') LIMIT 1[0m
+  [4;36;1mYouroomOauth Load (0.3ms)[0m   [0;1mSELECT * FROM `youroom_oauths` WHERE (`youroom_oauths`.user_id = 1) LIMIT 1[0m
+  [4;35;1mYouroomOauth Columns (59.5ms)[0m   [0mSHOW FIELDS FROM `youroom_oauths`[0m
+Completed in 1302ms (View: 2, DB: 116) | 200 OK [http://localhost/youroom/entries/r4]
