@@ -8,27 +8,27 @@
   padding: 4px 0px;
 }
 .entry img {
-             float: left;
-             margin: 4px;
-             }
+  float: left;
+  margin: 4px;
+}
 .entry .name {
-               color: glay;
-               }
+  color: glay;
+}
 .clear_left {
-              clear: left;
-              }
+  clear: left;
+}
 .reset {
          }
 .room {
-        margin: 3px 0;
-        }
+  margin: 3px 0;
+}
 .link {
-        color: blue;
-        cursor: pointer;
-        }
+  color: blue;
+  cursor: pointer;
+}
 .link:hover {
-              text-decoration: underline;
-              }
+  text-decoration: underline;
+}
 form textarea {
-                width: 100%;
-                }
+  width: 100%;
+}

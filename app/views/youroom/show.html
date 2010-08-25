@@ -6,7 +6,9 @@
   </ModulePrefs>
   <Content type="html"><![CDATA[
     <script type="text/javascript" src="https://dl.dropbox.com/u/7052609/opensocial-jquery.min.js"></script>
-    <link href="http://localhost:3000/stylesheets/room.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- stylesheet_link_tag select hostname which is infoscoop moved.  -->
+    <%= stylesheet_link_tag 'http://localhost:3000/stylesheets/room.css' %>
+
 
     <script type="text/javascript">
         $(function(){
@@ -122,8 +124,7 @@
 
         boot();
       });
-  </script>
-
+    </script>
   <div id="main">
   </div>
   ]]></Content>
