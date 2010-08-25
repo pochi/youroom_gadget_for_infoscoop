@@ -1,52 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
   <ModulePrefs title="Youroom ガジェット" author_email="pochi.black@gmail.com" scrolling="true">
+    <Require feature="opensocial-0.8" />
+    <Require feature="dynamic-height"/>
   </ModulePrefs>
   <Content type="html"><![CDATA[
     <script type="text/javascript" src="https://dl.dropbox.com/u/7052609/opensocial-jquery.min.js"></script>
+    <link href="http://localhost:3000/stylesheets/room.css" media="screen" rel="stylesheet" type="text/css">
 
-    <style>
-    #main {
-      margin: 0px;
-      padding: 0px;
-      font-size: small;
-    }
-    .entry {
-      border-bottom: 1px solid silver;
-      padding: 4px 0px;
-    }
-    .entry img {
-      float: left;
-      margin: 4px;
-    }
-    .entry .name {
-      color: glay;
-    }
-    .clear_left {
-      clear: left;
-    }
-    .reset {
-    }
-    .room {
-      margin: 3px 0;
-    }
-    .link {
-      color: blue;
-      cursor: pointer;
-    }
-    .link:hover {
-      text-decoration: underline;
-    }
-    form textarea {
-      width: 100%;
-    }
-  </style>
-
-  <script type="text/javascript">
-      $(function(){
-        function showOneSection(toshow) {
-          var main = document.getElementById('main');
-          var sections = [ 'main' ];
+    <script type="text/javascript">
+        $(function(){
+          function showOneSection(toshow) {
+            var main = document.getElementById('main');
+            var sections = [ 'main' ];
           for (var i=0; i < sections.length; ++i) {
             var s = sections[i];
             var el = document.getElementById(s);
@@ -117,11 +83,18 @@
 
         function submitComment() {
           if (this.content.value != "") {
+            postEntry(this.content.value);
           } else {
             alert("Input content");
           }
           return false;
         }
+
+        function postEntry(content) {
+          url = "https://" + getRoomId() + ".youroom.in/entries?format=json";
+          callYouRoom(url, "post", bootWithClear, {"entry[content]":content});
+        }
+
 
         function fetchData(url, successCallback){
           // get information with infoscoop authentication

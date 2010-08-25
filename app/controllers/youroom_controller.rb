@@ -1,4 +1,7 @@
+require "json"
+
 class YouroomController < ApplicationController
+  YOUROOM_URL = 'https://www.youroom.in/'
   before_filter :setup_user, :only=>[:list_html, :entries]
 
   def index
@@ -9,11 +12,11 @@ class YouroomController < ApplicationController
   end
 
   def list_html
-    render :json => client.get_my_group.body
+    render :json => client.get_my_group.to_json
   end
 
   def entries
-    render :json => client.get_entry(params[:id]).body
+    render :json => client.get_entry(params[:id]).to_json
   end
 
   private
@@ -28,7 +31,7 @@ class YouroomController < ApplicationController
   def consumer
     @consumer ||= ::OAuth::Consumer.new(@user.youroom_oauth.consumer_key,
                                         @user.youroom_oauth.consumer_secret,
-                                        :site=>"https://api.youroom.in/")
+                                        :site=>YOUROOM_URL)
   end
 
   def access_token

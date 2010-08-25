@@ -1,0 +1,34 @@
+#main {
+  margin: 0px;
+  padding: 0px;
+  font-size: small;
+}
+.entry {
+  border-bottom: 1px solid silver;
+  padding: 4px 0px;
+}
+.entry img {
+             float: left;
+             margin: 4px;
+             }
+.entry .name {
+               color: glay;
+               }
+.clear_left {
+              clear: left;
+              }
+.reset {
+         }
+.room {
+        margin: 3px 0;
+        }
+.link {
+        color: blue;
+        cursor: pointer;
+        }
+.link:hover {
+              text-decoration: underline;
+              }
+form textarea {
+                width: 100%;
+                }
