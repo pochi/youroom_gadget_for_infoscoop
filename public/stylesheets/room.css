@@ -53,6 +53,17 @@ form.comment {
 form.comment textarea {
   width: 95%;
 }
+
+form.parent textarea {
+  margin-top: 5px;
+  width: 95%;
+}
+
+form.parent {
+  margin-bottom: 5px;
+  border-bottom: 1px dotted silver;
+}
+
 .children {
   margin-left: 10px;
  }

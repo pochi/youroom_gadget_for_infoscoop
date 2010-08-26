@@ -29,7 +29,12 @@
           $main.empty();
 
           $main.haml(["#header",
-                     ["#reload.link", "更新する"]]);
+                     ["#reload.link", "更新する"]],
+                     ["%form.parent", {action: "#"},
+                      ["%textarea", {name: "content"}],
+                      ["%input.parent", {type: "button", value: "トピックを登録"}]
+                     ]);
+
 
           eval(result).each(function(entry, _){
             showEachResult(entry["entry"], $main);
@@ -50,7 +55,7 @@
                     ],
                     ["%form.comment", {action: "#"},
                     ["%textarea", {name: "content"}],
-                    ["%input.comment", {type: "button", value: "Post"}]
+                    ["%input.comment", {type: "button", value: "登録する"}]
                     ],
                     [".children"]
                   ]);
@@ -185,8 +190,25 @@
           return false;
         });
 
+        $("input.parent").live('click', function(){
+          var $form = $(this).parents('form:first');
+          var content = $form.find('textarea').val();
+          if (content != "") {
+            var groupId = "<%= @room_id %>";
+            $(this).after($loading_img);
+            postEntry(content, groupId, null);
+          } else {
+            alert("Input content");
+          }
+          return false;
+        });
+
         function postEntry(content, groupId, parentId) {
-          var url = "http://localhost:3000/youroom/create_entry/" + groupId + "?content=" + content + "&parent_id=" + parentId;
+          if(parentId) {
+            var url = "http://localhost:3000/youroom/create_entry/" + groupId + "?content=" + content + "&parent_id=" + parentId;
+          } else {
+            var url = "http://localhost:3000/youroom/create_entry/" + groupId + "?content=" + content;
+          }
           callYouRoom(url, addComment, null);
         }
 
