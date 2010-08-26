@@ -141,75 +141,77 @@
           return null;
         }
 
-  function getEntryHaml(entry, groupId) {
-    var haml;
-    var groupParam;
-    if (groupId) {
-      groupParam = {to_param: groupId};
-    } else {
-      groupParam = entry["participation"]["group"];
-    }
+        function getEntryHaml(entry, groupId) {
+          var haml;
+          var groupParam;
+          if (groupId) {
+            groupParam = {to_param: groupId};
+          } else {
+            groupParam = entry["participation"]["group"];
+          }
 
-    haml = [".entry"+"#"+entry["id"],
-            ["%img.profile", {src:getPictureUrl(entry, groupParam.to_param), width:48, height:48}],
-            [".name", entry["participation"]["name"]],
-            [".group"],
-            [".content", entry["content"]],
-            [".clear_left"],
-            [".navi",
-             [".comment.link", "Comment"],
-             [".clear_left"]
-            ],
-            ["%form.comment", {action: "#"},
-             ["%textarea", {name: "content"}],
-             ["%input.comment", {type: "button", value: "Post"}]
-            ]
-           ];
-    haml.push([".children", getChildrenHaml(entry, groupId)]);
-    return haml;
-  }
+          haml = [".entry"+"#"+entry["id"],
+                  ["%img.profile", {src:getPictureUrl(entry, groupParam.to_param), width:48, height:48}],
+                  [".name", entry["participation"]["name"]],
+                  [".group"],
+                  [".content", entry["content"]],
+                  [".clear_left"],
+                  [".navi",
+                   [".comment.link", "Comment"],
+                   [".clear_left"]
+                  ],
+                  ["%form.comment", {action: "#"},
+                   ["%textarea", {name: "content"}],
+                   ["%input.comment", {type: "button", value: "Post"}]
+                  ]
+                 ];
+          haml.push([".children", getChildrenHaml(entry, groupId)]);
+          return haml;
+        }
 
-  $(".link.comment").live('click', function(){
-    var entry = $(this).parents('.navi').next('form.comment').toggle();
-    gadgets.window.adjustHeight();
-  });
+        $(".link.comment").live('click', function(){
+          var entry = $(this).parents('.navi').next('form.comment').toggle();
+          gadgets.window.adjustHeight();
+        });
 
-  $("input.comment").live('click', function(){
-    var $form = $(this).parents('form:first');
-    var content = $form.find('textarea').val();
-    if (content != "") {
-      var entryId = $form.parents(".entry")[0].id;
-      var groupId = $form.parents(".root.entry").find('.group')[0].attributes[0].value;
-      $(this).after($loading_img);
-      postEntry(content, groupId, entryId);
-    } else {
-      alert("Input content");
-    }
-    return false;
-  });
+        $("input.comment").live('click', function(){
+          var $form = $(this).parents('form:first');
+          var content = $form.find('textarea').val();
+          if (content != "") {
+            var entryId = $form.parents(".entry")[0].id;
+            var groupId = $form.parents(".root.entry").find('.group')[0].attributes[0].value;
+            $(this).after($loading_img);
+            postEntry(content, groupId, entryId);
+          } else {
+            alert("Input content");
+          }
+          return false;
+        });
 
-  function postEntry(content, groupId, parentId) {
-    var url = "https://www.youroom.in/r/" + groupId + "/entries.json";
-    callYouRoom(url, "post", addComment, {"entry[content]":content, "entry[parent_id]": parentId});
-  }
+        function postEntry(content, groupId, parentId) {
+          var url = "https://www.youroom.in/r/" + groupId + "/entries.json";
+          callYouRoom(url, "post", addComment, {"entry[content]":content, "entry[parent_id]": parentId});
+        }
 
-  function addComment(result){
-    var parent_id = result.entry.parent_id;
-    $(".entry#"+parent_id).find("form").hide().end()
-      .find(".children:first").haml(getEntryHaml(result.entry)).end()
-      .find('form.comment textarea').val('');
-    $('.loading').hide();
-  }
+        function addComment(result){
+          var parent_id = result.entry.parent_id;
+          $(".entry#"+parent_id).find("form").hide().end()
+            .find(".children:first").haml(getEntryHaml(result.entry)).end()
+            .find('form.comment textarea').val('');
+          $('.loading').hide();
+        }
 
-  $('#reload').live("click", function(){
-    $(this).append($loading_img);
-    getHomeEntries();
-  });
+        $('#reload').live("click", function(){
+          $(this).append($loading_img);
+          getHomeEntries();
+        });
 
-  $('img.profile').live('error', function(){
-    alert($(this).attr('src'));
-    $(this).attr('src', default_img_url);
-  });
+        $('img.profile').live('error', function(){
+          alert($(this).attr('src'));
+          $(this).attr('src', default_img_url);
+        });
+
+        // start
         getHomeEntries();
       });
     </script>
