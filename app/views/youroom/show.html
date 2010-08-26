@@ -14,6 +14,9 @@
 
     <script type="text/javascript">
       $(function(){
+        var $loading_img = $("<img src='http://github.com/mataki/youRoom-gadgets/raw/master/home/bouncing_ball.gif' class='loading'>");
+        var default_img_url = "https://www.youroom.in/images/default_picture.png";
+
         function showOneSection(toshow) {
           $('#main, #approval, #waiting').hide();
           $('#' + toshow).show();
@@ -41,8 +44,8 @@
                     [".clear_left"],
                     [".content", entry["content"]],
                     [".navi",
-                      [".show.link", "Show"],
-                      [".comment.link", "Comment"],
+                      [".show.link", "詳細をみる"],
+                      [".comment.link", "コメントする"],
                       [".clear_left"]
                     ],
                     ["%form.comment", {action: "#"},
@@ -112,6 +115,101 @@
           callYouRoom(url, showResults, null);
         }
 
+        $(".link.show").live('click', function() {
+          var entry = $(this).parents(".root.entry")[0];
+          var entryId = entry.id;
+          var groupId = $(this).parents(".root.entry").find('.group')[0].attributes[0].value;
+          var url = "http://localhost:3000/youroom/entries/" + groupId + "?mutter_id=" + entryId;
+          $(this).addClass('disable').removeClass('show').append($loading_img);
+
+          callYouRoom(url, function(result) {
+            $(entry).find('.children').empty().haml(getChildrenHaml(result.entry, groupId));
+            $('.loading').hide();
+            gadgets.window.adjustHeight();
+          });
+        });
+
+        function getChildrenHaml(entry, groupId) {
+          if (entry.children) {
+            var childrenHaml = [];
+            $.each(entry.children, function(){
+              var childHaml = getEntryHaml(this, groupId);
+              childrenHaml.push(childHaml);
+            });
+           return childrenHaml;
+          }
+          return null;
+        }
+
+  function getEntryHaml(entry, groupId) {
+    var haml;
+    var groupParam;
+    if (groupId) {
+      groupParam = {to_param: groupId};
+    } else {
+      groupParam = entry["participation"]["group"];
+    }
+
+    haml = [".entry"+"#"+entry["id"],
+            ["%img.profile", {src:getPictureUrl(entry, groupParam.to_param), width:48, height:48}],
+            [".name", entry["participation"]["name"]],
+            [".group"],
+            [".content", entry["content"]],
+            [".clear_left"],
+            [".navi",
+             [".comment.link", "Comment"],
+             [".clear_left"]
+            ],
+            ["%form.comment", {action: "#"},
+             ["%textarea", {name: "content"}],
+             ["%input.comment", {type: "button", value: "Post"}]
+            ]
+           ];
+    haml.push([".children", getChildrenHaml(entry, groupId)]);
+    return haml;
+  }
+
+  $(".link.comment").live('click', function(){
+    var entry = $(this).parents('.navi').next('form.comment').toggle();
+    gadgets.window.adjustHeight();
+  });
+
+  $("input.comment").live('click', function(){
+    var $form = $(this).parents('form:first');
+    var content = $form.find('textarea').val();
+    if (content != "") {
+      var entryId = $form.parents(".entry")[0].id;
+      var groupId = $form.parents(".root.entry").find('.group')[0].attributes[0].value;
+      $(this).after($loading_img);
+      postEntry(content, groupId, entryId);
+    } else {
+      alert("Input content");
+    }
+    return false;
+  });
+
+  function postEntry(content, groupId, parentId) {
+    var url = "https://www.youroom.in/r/" + groupId + "/entries.json";
+    callYouRoom(url, "post", addComment, {"entry[content]":content, "entry[parent_id]": parentId});
+  }
+
+  function addComment(result){
+    var parent_id = result.entry.parent_id;
+    $(".entry#"+parent_id).find("form").hide().end()
+      .find(".children:first").haml(getEntryHaml(result.entry)).end()
+      .find('form.comment textarea').val('');
+    $('.loading').hide();
+  }
+
+  $('#reload').live("click", function(){
+    $(this).append($loading_img);
+    getHomeEntries();
+  });
+
+  $('img.profile').live('error', function(){
+    alert($(this).attr('src'));
+    $(this).attr('src', default_img_url);
+  });
         getHomeEntries();
       });
     </script>

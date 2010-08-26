@@ -16,7 +16,8 @@ class YouroomController < ApplicationController
   end
 
   def entries
-    render :json => client.get_entry(params[:id]).to_json
+    json = params[:mutter_id] ? client.get_entry(params[:id], params[:mutter_id]).to_json : client.get_entry(params[:id]).to_json
+    render :json => json
   end
 
   private
