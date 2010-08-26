@@ -70,12 +70,6 @@
           return false;
         }
 
-        function postEntry(content) {
-          url = "https://" + getRoomId() + ".youroom.in/entries?format=json";
-          callYouRoom(url, "post", bootWithClear, {"entry[content]":content});
-        }
-
-
         function fetchData(url, successCallback){
           // get information with infoscoop authentication
           gadgets.io.makeRequest(url,
@@ -182,7 +176,7 @@
           var content = $form.find('textarea').val();
           if (content != "") {
             var entryId = $form.parents(".entry")[0].id;
-            var groupId = $form.parents(".root.entry").find('.group')[0].attributes[0].value;
+            var groupId = "<%= @room_id %>";
             $(this).after($loading_img);
             postEntry(content, groupId, entryId);
           } else {
@@ -192,8 +186,10 @@
         });
 
         function postEntry(content, groupId, parentId) {
-          var url = "https://www.youroom.in/r/" + groupId + "/entries.json";
-          callYouRoom(url, "post", addComment, {"entry[content]":content, "entry[parent_id]": parentId});
+          var url = "http://localhost:3000/youroom/create_entry/" + groupId + "?content=" + content;
+          alert(url);
+          // {"entry[content]":content, "entry[parent_id]": parentId});
+          callYouRoom(url, addComment, null);
         }
 
         function addComment(result){

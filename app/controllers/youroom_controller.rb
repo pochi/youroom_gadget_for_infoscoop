@@ -2,7 +2,7 @@ require "json"
 
 class YouroomController < ApplicationController
   YOUROOM_URL = 'https://www.youroom.in/'
-  before_filter :setup_user, :only=>[:list_html, :entries]
+  before_filter :setup_user, :only=>[:list_html, :entries, :create_entry]
 
   def index
   end
@@ -13,6 +13,12 @@ class YouroomController < ApplicationController
 
   def list_html
     render :json => client.get_my_group.to_json
+  end
+
+  def create_entry
+    @room_id = params[:id]
+    logger.info "---"*20
+    logger.info client.post_entry(@room_id, params[:content])
   end
 
   def entries
