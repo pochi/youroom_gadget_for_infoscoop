@@ -118,18 +118,20 @@
         $(".link.show").live('click', function() {
           var entry = $(this).parents(".root.entry")[0];
           var entryId = entry.id;
-          var groupId = $(this).parents(".root.entry").find('.group')[0].attributes[0].value;
+          var groupId = "<%= @room_id %>";
           var url = "http://localhost:3000/youroom/entries/" + groupId + "?mutter_id=" + entryId;
           $(this).addClass('disable').removeClass('show').append($loading_img);
 
           callYouRoom(url, function(result) {
-            $(entry).find('.children').empty().haml(getChildrenHaml(result.entry, groupId));
+            var res = eval("("+result+")");
+            $(entry).find('.children').empty().haml(getChildrenHaml(res.entry, groupId));
             $('.loading').hide();
             gadgets.window.adjustHeight();
-          });
+          }, null);
         });
 
         function getChildrenHaml(entry, groupId) {
+          if (entry){
           if (entry.children) {
             var childrenHaml = [];
             $.each(entry.children, function(){
@@ -137,6 +139,7 @@
               childrenHaml.push(childHaml);
             });
            return childrenHaml;
+          }
           }
           return null;
         }
@@ -157,7 +160,7 @@
                   [".content", entry["content"]],
                   [".clear_left"],
                   [".navi",
-                   [".comment.link", "Comment"],
+                   [".comment.link", "コメントする"],
                    [".clear_left"]
                   ],
                   ["%form.comment", {action: "#"},
