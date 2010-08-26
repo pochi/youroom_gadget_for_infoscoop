@@ -5,7 +5,9 @@
     <Require feature="dynamic-height"/>
   </ModulePrefs>
   <Content type="html"><![CDATA[
-    <script type="text/javascript" src="https://dl.dropbox.com/u/7052609/opensocial-jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+
     <script src="http://github.com/creationix/jquery-haml/raw/master/jquery.haml-1.3.js"></script>
     <!-- stylesheet_link_tag select hostname which is infoscoop moved.  -->
     <%= stylesheet_link_tag 'http://localhost:3000/stylesheets/room.css' %>
@@ -18,61 +20,43 @@
         }
 
         function showResults(result){
-          var mainDom = document.getElementById("main");
+          showOneSection('main');
+          var $main = $("#main");
 
-          // Title
-          var titleElement = document.createElement('div');
-          mainDom.appendChild(titleElement);
+          $main.empty();
 
-          // Form
-          var formElem = document.createElement('form');
-          formElem.onsubmit = submitComment;
-          var textElem = document.createElement('textarea');
-          textElem.setAttribute('name', "content");
-          var submitElem = document.createElement('input');
-          submitElem.type = "submit";
-          formElem.appendChild(textElem);
-          formElem.appendChild(submitElem);
-          mainDom.appendChild(formElem);
+          $main.haml(["#header",
+                     ["#reload.link", "更新する"]]);
 
           eval(result).each(function(entry, _){
-            showEachEntry(entry["entry"], mainDom);
+            showEachResult(entry["entry"], $main);
           });
-
-          mainDom.appendChild(resetElement);
-
           gadgets.window.adjustHeight();
         }
 
-        function showEachEntry(entry, mainDom) {
-          var nameElem = document.createElement('div');
-          nameElem.setAttribute('class', 'name');
-          nameElem.appendChild(document.createTextNode(entry["participation"]["name"]));
-
-          var contentElem = document.createElement('div');
-          contentElem.setAttribute('class', 'content');
-          var valueNode = document.createTextNode(entry["content"]);
-          contentElem.appendChild(valueNode);
-
-          // Create profile pitcutre
-          // http://r17.youroom.sg/participations/117/picture?1267145048
-          var imageElem = document.createElement('img');
-          imageElem.src = 'https://' + "<%= @room_id %>" + '.youroom.in/participations/' + entry["participation"]["id"] + '/picture';
-          imageElem.width = 48;
-          imageElem.height = 48;
-
-          var clearElem = document.createElement('div');
-          clearElem.setAttribute('class', 'clear_left');
-
-          var entryElem = document.createElement('div');
-          entryElem.setAttribute('class', 'entry');
-          entryElem.appendChild(imageElem);
-          entryElem.appendChild(nameElem);
-          entryElem.appendChild(contentElem);
-          entryElem.appendChild(clearElem);
-
-          mainDom.appendChild(entryElem);
+        function showEachResult(entry, main) {
+          main.haml([".root.entry"+"#"+entry["id"],
+                    ["%img.profile", {src:getPictureUrl(entry, "<%= @room_id %>"), width:48, height:48}],
+                    [".name", entry["participation"]["name"]],
+                    [".clear_left"],
+                    [".content", entry["content"]],
+                    [".navi",
+                      [".show.link", "Show"],
+                      [".comment.link", "Comment"],
+                      [".clear_left"]
+                    ],
+                    ["%form.comment", {action: "#"},
+                    ["%textarea", {name: "content"}],
+                    ["%input.comment", {type: "button", value: "Post"}]
+                    ],
+                    [".children"]
+                  ]);
         }
+
+        function getPictureUrl(entry, groupId) {
+          return "https://www.youroom.in/r/" + groupId + "/participations/" + entry["participation"]["id"] + "/picture";
+        }
+
 
         function submitComment() {
           if (this.content.value != "") {
