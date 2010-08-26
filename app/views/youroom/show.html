@@ -193,10 +193,12 @@
         $("input.parent").live('click', function(){
           var $form = $(this).parents('form:first');
           var content = $form.find('textarea').val();
+          $form.find('textarea').empty();
           if (content != "") {
             var groupId = "<%= @room_id %>";
             $(this).after($loading_img);
             postEntry(content, groupId, null);
+            getHomeEntries();
           } else {
             alert("Input content");
           }
