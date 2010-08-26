@@ -9,12 +9,11 @@
     <!-- stylesheet_link_tag select hostname which is infoscoop moved.  -->
     <%= stylesheet_link_tag 'http://localhost:3000/stylesheets/room.css' %>
 
-
     <script type="text/javascript">
-        $(function(){
-          function showOneSection(toshow) {
-            var main = document.getElementById('main');
-            var sections = [ 'main' ];
+      $(function(){
+        function showOneSection(toshow) {
+          var main = document.getElementById('main');
+          var sections = [ 'main' ];
           for (var i=0; i < sections.length; ++i) {
             var s = sections[i];
             var el = document.getElementById(s);
@@ -26,7 +25,7 @@
           }
         }
 
-        function showEntries(result){
+        function showResults(result){
           var mainDom = document.getElementById("main");
 
           // Title
@@ -117,12 +116,27 @@
           boot();
         }
 
+        function callYouRoom(url, successCallback, postdata) {
+          var params = {};
+          params["AUTHORIZATION"] = gadgets.io.AuthorizationType.IS_SEND_PORTAL_UID_HEADER;
 
-        function boot(){
-          fetchData("http://localhost:3000/youroom/entries/" + "<%= @room_id %>", showEntries);
+          if (postdata) {
+            postdata = gadgets.io.encodeValues(postdata);
+            params[gadgets.io.RequestParameters.POST_DATA]= postdata;
+          }
+
+          gadgets.io.makeRequest(url,
+                                 function(response) {
+                                   successCallback(response.data);
+                                 }, params);
         }
 
-        boot();
+        function getHomeEntries(){
+          var url = "http://localhost:3000/youroom/entries/" + "<%= @room_id %>";
+          callYouRoom(url, showResults, null);
+        }
+
+        getHomeEntries();
       });
     </script>
   <div id="main">
