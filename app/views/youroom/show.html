@@ -186,16 +186,15 @@
         });
 
         function postEntry(content, groupId, parentId) {
-          var url = "http://localhost:3000/youroom/create_entry/" + groupId + "?content=" + content;
-          alert(url);
-          // {"entry[content]":content, "entry[parent_id]": parentId});
+          var url = "http://localhost:3000/youroom/create_entry/" + groupId + "?content=" + content + "&parent_id=" + parentId;
           callYouRoom(url, addComment, null);
         }
 
         function addComment(result){
-          var parent_id = result.entry.parent_id;
+          var res = eval("("+result+")")
+          var parent_id = res.entry.parent_id;
           $(".entry#"+parent_id).find("form").hide().end()
-            .find(".children:first").haml(getEntryHaml(result.entry)).end()
+            .find(".children:first").haml(getEntryHaml(res.entry)).end()
             .find('form.comment textarea').val('');
           $('.loading').hide();
         }

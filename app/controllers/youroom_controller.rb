@@ -17,13 +17,11 @@ class YouroomController < ApplicationController
 
   def create_entry
     @room_id = params[:id]
-    logger.info "---"*20
-    logger.info client.post_entry(@room_id, params[:content])
+    render :json => client.post_entry(@room_id, params[:content], params[:parent_id])
   end
 
   def entries
     json = params[:mutter_id] ? client.get_entry(params[:id], params[:mutter_id]).to_json : client.get_entry(params[:id]).to_json
-    logger.info json.inspect
     render :json => json
   end
 
