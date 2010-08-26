@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
   <ModulePrefs title="Youroom ガジェット" author_email="pochi.black@gmail.com" scrolling="true">
+    <Require feature="opensocial-0.8" />
+    <Require feature="dynamic-height"/>
   </ModulePrefs>
   <Content type="html"><![CDATA[
     <script type="text/javascript" src="https://dl.dropbox.com/u/7052609/opensocial-jquery.min.js"></script>
@@ -21,6 +23,8 @@
 
     <script type="text/javascript">
       $(function(){
+        var default_img_url = "https://www.youroom.in/images/default_picture.png";
+
         $("#all").click(function(){
           _IS_DropMiniBrowser("https://home.youroom.in/", "全てのつぶやき", "https://home.youroom.in/");
         });
@@ -56,6 +60,8 @@
             renderRoom(room.group.name, convertUrl(room.group.to_param), (count+1).toString());
             setLinkAction(room.group.name, groupUrl(room.group.to_param), (count+1).toString());
           });
+
+          gadgets.window.adjustHeight();
         };
 
         function setLinkAction(name, url, num) {
@@ -122,7 +128,9 @@
 
         };
 
+
         initializeRoomList();
+
       });
     </script>
 
